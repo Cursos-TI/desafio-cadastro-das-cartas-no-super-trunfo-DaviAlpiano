@@ -95,14 +95,14 @@ int main() {
     printf("Poder da carta 1: %.2f \n", Poder1);
     printf("Poder da carta 2: %.2f \n", Poder2);
 
-    printf("Resultado 1 para carta 1 e 0 para carta 2 \n");
-    printf("Poppulção: %d \n", população1 > população2);
-    printf("Área: %d \n", area1 > area2);
-    printf("PIB: %d \n", pib1 > pib2);
-    printf("Pontos turísticos: %d \n", pontosTuristicos1 > pontosTuristicos2);
-    printf("Densidade populacional: %d \n", densidadePopulacional1 < densidadePopulacional2);
-    printf("PIB per capita: %d \n", pibPerCapita1 > pibPerCapita2);
-    printf("Poder: %d \n", Poder1 > Poder2);
+    printf("Resultado das comparações: \n");
+    printf("Poppulção: %s \n", população1 > população2? estado1 : estado2);
+    printf("Área: %s \n", area1 > area2? estado1 : estado2);
+    printf("PIB: %s \n", pib1 > pib2? estado1 : estado2);
+    printf("Pontos turísticos: %s \n", pontosTuristicos1 > pontosTuristicos2? estado1 : estado2);
+    printf("Densidade populacional: %s \n", densidadePopulacional1 < densidadePopulacional2? estado1 : estado2);
+    printf("PIB per capita: %s \n", pibPerCapita1 > pibPerCapita2? estado1 : estado2);
+    printf("Poder: %s \n", Poder1 > Poder2? estado1 : estado2);
 
     return 0;
 }
